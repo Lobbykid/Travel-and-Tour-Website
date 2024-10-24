@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
 import './Navbar.css'
+import { Link } from "react-router-dom";
 
 import { MdOutlineTravelExplore } from 'react-icons/md'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { TbGridDots } from 'react-icons/tb'
+import { IoIosCart } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
+
 
 const Navbar = () => {
     const[active , setActive] = useState('navBar') 
@@ -20,42 +24,46 @@ const Navbar = () => {
         <header className='header flex'>
             <div className='logoDiv'>
                 <a href='#' className='logo flex'>
-                    <h1> <MdOutlineTravelExplore className='icon'/> Travel. </h1>
+                    <h1> <MdOutlineTravelExplore className='icon'/>  <Link className='icon' to="/"> Travel. </Link> </h1>
                 </a>
             </div>
-
+            
             <div className={active}>
                 <ul className='navLists flex'>
-                   
                     <li className='navItems'>
-                        <a href='#' className='navLink' >Home</a>
+                        <a href='#' className='navLink'>GIỚI THIỆU</a>
                     </li>
                     <li className='navItems'>
-                        <a href='#' className='navLink'>Packages</a>
+                        <a href='#' className='navLink'>KHÁCH SẠN</a>
                     </li>
                     <li className='navItems'>
-                        <a href='#' className='navLink'>Shop</a>
+                        <a href='#' className='navLink'>TIN TỨC</a>
                     </li>
                     <li className='navItems'>
-                        <a href='#' className='navLink'>About</a>
+                        <a href='#' className='navLink'>TOUR</a>
                     </li>
                     <li className='navItems'>
-                        <a href='#' className='navLink'>Pages</a>
+                         <Link className='navLink' to="/contact">LIÊN HỆ</Link>
                     </li>
-                    <li className='navItems'>
-                        <a href='#' className='navLink'>News</a>
-                    </li>
-
+                  
                     <button className='btn'>
                         <a href='#'>BOOK NOW</a>
-                    </button>
-
+                    </button>               
                     <div onClick={removeNavBar}
                     className='closeNavbar'>
                         <AiFillCloseCircle className='icon'/>
                     </div>
-                </ul>
-                
+                    <div className="navbar-right d-flex">
+                    <li className='navItems'>                       
+                         <a href='#' className='navLink'> <IoIosCart className='icon-nav' />
+                        GIỎ HÀNG</a>
+                    </li>
+                    <li className='navItems'>                       
+                         <a href='#' className='navLink'> <FaUser className='icon-nav' />
+                        ĐĂNG NHẬP/ĐÂNG KÝ</a>
+                    </li>
+                    </div>
+                </ul>     
             </div>
 
             <div onClick={showNav}
@@ -67,4 +75,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

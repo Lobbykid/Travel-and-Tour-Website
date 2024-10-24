@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import "./Home.css";
-import video from "../../Assets/video.mp4";
+import video from "../../../Assets/video.mp4";
 import { FaGithub, FaMagnifyingGlassLocation } from "react-icons/fa6";
 import { HiFilter } from "react-icons/hi";
 import { FiFacebook, FiInstagram } from "react-icons/fi";

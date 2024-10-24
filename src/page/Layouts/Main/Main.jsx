@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
 import './Main.css'
-import img from '../../Assets/img (1).jpg'
+import img from '../../../Assets/img (1).jpg'
 import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi'
+import Layout from '../Layout'
 
 
 import Aos from "aos";
@@ -101,6 +102,8 @@ const Main = () => {
   },[])
 
   return (
+    <Layout>
+
     <section className='main container section'>
       <div className="secTitle">
         <h3 data-aos="fade-right" className='title'>
@@ -148,6 +151,7 @@ const Main = () => {
         }
       </div>
     </section>
+    </Layout>
   )
 }
 

@@ -1,19 +1,24 @@
-import React from 'react'
-import './app.css'
-import Navbar from './Components/Navbar/Navbar'
-import Main from './Components/Main/Main'
-import Footer from './Components/Footer/Footer'
-import Home from './Components/Home/Home'
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
+import './app.css';
+import Navbar from './page/Layouts/Navbar/Navbar';
+import Main from './page/Layouts/Main/Main';
+import Footer from './page/Layouts/Footer/Footer';
+import Home from './page/Layouts/Home/Home';
+import Contact from "./page/contact.js";
 
 const App = () => {
   return (
     <>
-      <Navbar/>
-      <Home/>
-      <Main/>
-      <Footer/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Các route khác */}
+      </Routes>
+   
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
