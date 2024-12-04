@@ -1,0 +1,53 @@
+.title{
+    font-style: inherit;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #67b6f7;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border: 15px; 
+  }
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .item5 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  
+  .img-lc{
+    border: 15px; 
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* khoảng cách giữa hình và chữ */
+  }
+  .btn-lc:hover{
+    background-color: black;
+  }
+  .title-description{
+    margin-bottom:20px ;
+  }
+.description{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(20, 150, 8);
+  padding: 10px;
+}
+.box-description{
+  padding: 25px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-top: 20px ;
+}

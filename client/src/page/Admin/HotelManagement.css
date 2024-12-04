@@ -1,0 +1,117 @@
+/* Reset các thuộc tính CSS mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Đặt font và màu nền cho trang */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Container cho tất cả nội dung */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Tiêu đề chính */
+  .header {
+    text-align: center;
+    color: #4e73df;
+    margin-bottom: 30px;
+  }
+  
+  /* Form container */
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #4e73df;
+    outline: none;
+  }
+  
+  .btn-submit {
+    grid-column: span 2;
+    padding: 12px 20px;
+    background-color: #4e73df;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #2e59d9;
+  }
+  
+  /* Table style */
+  .hotel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  .hotel-table th,
+  .hotel-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hotel-table th {
+    background-color: #f7f7f7;
+    color: #4e73df;
+  }
+  
+  .hotel-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button delete */
+  .btn-delete {
+    padding: 6px 12px;
+    background-color: #e74a3b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c92a2a;
+  }
+  

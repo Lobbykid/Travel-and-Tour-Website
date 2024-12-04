@@ -1,0 +1,48 @@
+.hotel-page {
+    display: flex;
+  }
+  
+  .hotel-filter {
+    width: 25%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+  }
+  
+  .hotel-list {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .hotel-item {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .hotel-item img {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .hotel-item h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .star-filter span {
+    color: #ffd700;
+    display: flex;
+  }
+  .items{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .items{
+    margin-right: 20px;
+  }

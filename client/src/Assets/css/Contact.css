@@ -1,0 +1,13 @@
+.title{
+    font-style:inherit;
+    font-size: larger;
+    
+}
+.box-description{
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  .title-description{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
